@@ -39,3 +39,23 @@ const allProjects = [
     src: "https://www.imghost.net/ib/0Vppl6xqQtfbnZE_1708411406.png",
   },
 ];
+
+// Functionality to display the different projects
+const renderProjects = (array) => {
+  const projectGridDisplay = array
+    .map((project) => {
+      return `
+    <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
+    <img src="${project.src}" alt="project image" class="project-image"/>
+    <p class="project-title">
+    <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
+    </p>
+    </a>
+    `;
+    })
+    .join("");
+
+  projectGrid.innerHTML = projectGridDisplay;
+};
+
+renderProjects(allProjects);
