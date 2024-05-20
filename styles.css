@@ -230,9 +230,9 @@ img {
 }
 
 .project:hover {
-  transform: scale(1.05);
-  transition: 1s;
-  box-shadow: 2px 2px 10px 3px var(--main-bg);
+  transform: scale(1.021);
+  transition: 0.5s;
+  box-shadow: 0px 2px 8px 2px var(--main-bg);
 }
 
 .code {
