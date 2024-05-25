@@ -23,8 +23,8 @@ const allProjects = [
   {
     id: 3,
     projectTitle: "Product Landing Page",
-    href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page",
-    src: "https://i.postimg.cc/0Q9bL6Fh/Product-Landing-Page.png",
+    href: "https://raphaelisaiah.github.io/Product-Landing-Page/",
+    src: "https://i.postimg.cc/rF7WfYzd/Product-Landing-Page.png",
   },
   {
     id: 4,
