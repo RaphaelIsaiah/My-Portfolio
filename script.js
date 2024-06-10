@@ -18,7 +18,7 @@ const allProjects = [
     id: 2,
     projectTitle: "Technical documentation Page",
     href: "https://raphaelisaiah.github.io/Technical-Documentation-Page/",
-    src: "https://i.postimg.cc/xdKRxLtk/image.pngG",
+    src: "https://i.postimg.cc/1tmpv28T/image.png",
   },
   {
     id: 3,
