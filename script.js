@@ -17,8 +17,8 @@ const allProjects = [
   {
     id: 2,
     projectTitle: "Technical documentation Page",
-    href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page",
-    src: "https://i.postimg.cc/25Q1cdc4/Technical-Documentation-Page.png",
+    href: "https://raphaelisaiah.github.io/Technical-Documentation-Page/",
+    src: "https://i.postimg.cc/xdKRxLtk/image.pngG",
   },
   {
     id: 3,
