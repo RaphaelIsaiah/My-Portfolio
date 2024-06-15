@@ -56,6 +56,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Music-Player/",
     src: "https://i.postimg.cc/v8KHz8g1/image.png",
   },
+  {
+    id: 8,
+    projectTitle: "Rock, Paper, Scissors Game",
+    href: "https://raphaelisaiah.github.io/Rock_Paper_Scissors-Game/",
+    src: "https://i.postimg.cc/NfTtFbPF/image.png",
+  },
 ];
 
 // Functionality to display the different projects
