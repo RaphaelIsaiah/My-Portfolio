@@ -60,7 +60,13 @@ const allProjects = [
     id: 8,
     projectTitle: "Rock, Paper, Scissors Game",
     href: "https://raphaelisaiah.github.io/Rock_Paper_Scissors-Game/",
-    src: "https://i.postimg.cc/NfTtFbPF/image.png",
+    src: "https://i.postimg.cc/GhLfTz5Q/image.png",
+  },
+  {
+    id: 9,
+    projectTitle: "Palindrome Checker",
+    href: "https://raphaelisaiah.github.io/Rock_Paper_Scissors-Game/",
+    src: "https://i.postimg.cc/t45Ctrq4/image.png",
   },
 ];
 
