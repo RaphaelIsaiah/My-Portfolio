@@ -68,6 +68,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Palindrome-Checker/",
     src: "https://i.postimg.cc/t45Ctrq4/image.png",
   },
+  {
+    id: 10,
+    projectTitle: "Todo App",
+    href: "https://raphaelisaiah.github.io/TODO-APP/",
+    src: "https://i.postimg.cc/qRk3XVkR/image.png",
+  },
 ];
 
 // Functionality to display the different projects
