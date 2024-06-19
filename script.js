@@ -74,6 +74,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/TODO-APP/",
     src: "https://i.postimg.cc/qRk3XVkR/image.png",
   },
+  {
+    id: 11,
+    projectTitle: "Binary to Decimal Converter",
+    href: "https://raphaelisaiah.github.io/Decimal-to-Binary-Converter/",
+    src: "https://i.postimg.cc/Twg2yJNf/image.png",
+  },
 ];
 
 // Functionality to display the different projects
