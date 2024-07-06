@@ -80,6 +80,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Decimal-to-Binary-Converter/",
     src: "https://i.postimg.cc/Twg2yJNf/image.png",
   },
+  {
+    id: 12,
+    projectTitle: "Roman Numeral Converter",
+    href: "https://raphaelisaiah.github.io/Roman-Numeral-Converter/",
+    src: "https://i.postimg.cc/0N824bVb/Roman-Numeral-Converter.png",
+  },
 ];
 
 // Functionality to display the different projects
