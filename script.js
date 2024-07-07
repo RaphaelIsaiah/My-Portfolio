@@ -92,56 +92,46 @@ const allProjects = [
   },
 ];
 
-// Functionality to display the different projects
+// ------ Functionality to display the different projects
 
-// Displays only six of the projects
-const renderSix = (array) => {
-  const projectGridDisplay = array
-    .map((project) => {
-      if (project.id <= 6) {
-        return `
-        <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
-        <img src="${project.src}" alt="project image" class="project-image"/>
-        <p class="project-title">
-        <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
-        </p>
-        </a>
-        `;
-      }
-    })
+// Function to generate project HTML Markup
+const generateProjectMarkup = (currentProject) => `
+  <a id="${currentProject.id}" href="${currentProject.href}" target="_blank" class="project project-tile">
+    <img src="${currentProject.src}" alt="project image" class="project-image"/>
+    <p class="project-title">
+      <span class="code">&lt;</span>${currentProject.projectTitle} <span class="code">&#47;&gt;</span>
+    </p>
+  </a>
+`;
+
+// Function to display only six of the projects
+const renderSixProjects = (projectsArray) => {
+  const projectMarkup = projectsArray
+    .slice(0, 6) // Renders the first 6 projects.
+    .map(generateProjectMarkup)
     .join("");
 
-  projectGrid.innerHTML = projectGridDisplay;
+  projectGrid.innerHTML = projectMarkup;
+};
+
+// Function to render all projects
+const renderAllProjects = (projectsArray) => {
+  const isLess = projectToggle.innerText.includes("Less");
+  if (!isLess) {
+    const projectMarkup = projectsArray.map(generateProjectMarkup).join("");
+    projectGrid.innerHTML = projectMarkup;
+  } else {
+    renderSixProjects(allProjects);
+  }
+
+  projectToggle.innerHTML = isLess
+    ? `More <i class="fa-solid fa-angles-right"></i>`
+    : `Less <i class="fa-solid fa-angles-right"></i>`;
 };
 
 // This calls the function to display when the page loads.
-renderSix(allProjects);
-
-// The less and more functionality.
-// Renders all projects when clicked.
-const toggleProjectRender = (array) => {
-  if (projectToggle.textContent.includes("Less")) {
-    renderSix(allProjects);
-    projectToggle.innerHTML = `More <i class="fa-solid fa-angles-right"></i>`;
-  } else {
-    const projectGridDisplay = array
-      .map((project) => {
-        return `
-      <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
-      <img src="${project.src}" alt="project image" class="project-image"/>
-      <p class="project-title">
-      <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
-      </p>
-      </a>
-      `;
-      })
-      .join("");
-
-    projectGrid.innerHTML = projectGridDisplay;
-    projectToggle.innerHTML = `Less <i class="fa-solid fa-angles-right"></i>`;
-  }
-};
+renderSixProjects(allProjects);
 
 projectToggle.addEventListener("click", () => {
-  toggleProjectRender(allProjects);
+  renderAllProjects(allProjects);
 });
