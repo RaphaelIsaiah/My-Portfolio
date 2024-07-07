@@ -2,8 +2,6 @@
 const projectGrid = document.getElementById("projects-grid");
 const projectToggle = document.getElementById("project_toggle");
 
-// const lessProjects = document.querySelector(".btn-show-all");
-
 // Array to store projects list.
 const allProjects = [
   // {
@@ -92,7 +90,7 @@ const allProjects = [
   },
 ];
 
-// ------ Functionality to display the different projects
+// ------ Functionality to display the different projects -------
 
 // Function to generate project HTML Markup
 const generateProjectMarkup = (currentProject) => `
@@ -124,6 +122,7 @@ const renderAllProjects = (projectsArray) => {
     renderSixProjects(allProjects);
   }
 
+  // updates the innerHTML of the project toggle button
   projectToggle.innerHTML = isLess
     ? `More <i class="fa-solid fa-angles-right"></i>`
     : `Less <i class="fa-solid fa-angles-right"></i>`;
