@@ -1,4 +1,8 @@
+// HTML DOM Element selection
 const projectGrid = document.getElementById("projects-grid");
+const projectToggle = document.getElementById("project_toggle");
+
+// const lessProjects = document.querySelector(".btn-show-all");
 
 // Array to store projects list.
 const allProjects = [
@@ -89,21 +93,55 @@ const allProjects = [
 ];
 
 // Functionality to display the different projects
-const renderProjects = (array) => {
+
+// Displays only six of the projects
+const renderSix = (array) => {
   const projectGridDisplay = array
     .map((project) => {
-      return `
-    <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
-    <img src="${project.src}" alt="project image" class="project-image"/>
-    <p class="project-title">
-    <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
-    </p>
-    </a>
-    `;
+      if (project.id <= 6) {
+        return `
+        <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
+        <img src="${project.src}" alt="project image" class="project-image"/>
+        <p class="project-title">
+        <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
+        </p>
+        </a>
+        `;
+      }
     })
     .join("");
 
   projectGrid.innerHTML = projectGridDisplay;
 };
 
-renderProjects(allProjects);
+// This calls the function to display when the page loads.
+renderSix(allProjects);
+
+// The less and more functionality.
+// Renders all projects when clicked.
+const toggleProjectRender = (array) => {
+  if (projectToggle.textContent.includes("Less")) {
+    renderSix(allProjects);
+    projectToggle.innerHTML = `More <i class="fa-solid fa-angles-right"></i>`;
+  } else {
+    const projectGridDisplay = array
+      .map((project) => {
+        return `
+      <a id="${project.id}" href="${project.href}" target="_blank" class="project project-tile">
+      <img src="${project.src}" alt="project image" class="project-image"/>
+      <p class="project-title">
+      <span class ="code">&lt;</span>${project.projectTitle} <span class ="code">&#47;&gt;</span>
+      </p>
+      </a>
+      `;
+      })
+      .join("");
+
+    projectGrid.innerHTML = projectGridDisplay;
+    projectToggle.innerHTML = `Less <i class="fa-solid fa-angles-right"></i>`;
+  }
+};
+
+projectToggle.addEventListener("click", () => {
+  toggleProjectRender(allProjects);
+});
