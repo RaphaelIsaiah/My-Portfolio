@@ -112,6 +112,23 @@ const renderSixProjects = (projectsArray) => {
   projectGrid.innerHTML = projectMarkup;
 };
 
+// Function to sort Projects in descending order.
+const sortProjects = (array) => {
+  let sortedProject = array.sort((a, b) => {
+    if (a.id < b.id) {
+      return 1;
+    }
+
+    if (a.id > b.id) {
+      return -1;
+    }
+
+    return 0;
+  });
+
+  return sortedProject;
+};
+
 // Function to render all projects
 const renderAllProjects = (projectsArray) => {
   const isLess = projectToggle.innerText.includes("Less");
@@ -119,7 +136,7 @@ const renderAllProjects = (projectsArray) => {
     const projectMarkup = projectsArray.map(generateProjectMarkup).join("");
     projectGrid.innerHTML = projectMarkup;
   } else {
-    renderSixProjects(allProjects);
+    renderSixProjects(sortProjects(allProjects));
   }
 
   // updates the innerHTML of the project toggle button
@@ -129,8 +146,8 @@ const renderAllProjects = (projectsArray) => {
 };
 
 // This calls the function to display when the page loads.
-renderSixProjects(allProjects);
+renderSixProjects(sortProjects(allProjects));
 
 projectToggle.addEventListener("click", () => {
-  renderAllProjects(allProjects);
+  renderAllProjects(sortProjects(allProjects));
 });
