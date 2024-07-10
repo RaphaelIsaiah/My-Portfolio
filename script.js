@@ -112,21 +112,22 @@ const renderSixProjects = (projectsArray) => {
   projectGrid.innerHTML = projectMarkup;
 };
 
-// Function to sort Projects in descending order.
-const sortProjects = (array) => {
-  let sortedProject = array.sort((a, b) => {
+// Function to sort projects in descending order.
+const sortProjects = (projectsArray) => {
+  let sortedProjects = projectsArray.slice(); // Creates a copy of the original array
+  sortedProjects.sort((a, b) => {
     if (a.id < b.id) {
-      return 1;
+      return 1; // Swap positions if a's ID is less than b's ID
     }
 
     if (a.id > b.id) {
-      return -1;
+      return -1; // Swap positions if a's ID is greater than b's ID
     }
 
-    return 0;
+    return 0; // Keep the order unchanged if IDs are equal
   });
 
-  return sortedProject;
+  return sortedProjects;
 };
 
 // Function to render all projects
