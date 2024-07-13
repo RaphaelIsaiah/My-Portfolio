@@ -116,15 +116,16 @@ const renderSixProjects = (projectsArray) => {
 const sortProjects = (projectsArray) => {
   let sortedProjects = projectsArray.slice(); // Creates a copy of the original array
   sortedProjects.sort((a, b) => {
-    if (a.id < b.id) {
-      return 1; // Swap positions if a's ID is less than b's ID
-    }
+    return b.id - a.id; // sorts the projects in descending order
+    // if (a.id < b.id) {
+    //   return 1; // Swap positions if a's ID is less than b's ID
+    // }
 
-    if (a.id > b.id) {
-      return -1; // Swap positions if a's ID is greater than b's ID
-    }
+    // if (a.id > b.id) {
+    //   return -1; // Swap positions if a's ID is greater than b's ID
+    // }
 
-    return 0; // Keep the order unchanged if IDs are equal
+    // return 0; // Keep the order unchanged if IDs are equal
   });
 
   return sortedProjects;
