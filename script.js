@@ -88,6 +88,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Roman-Numeral-Converter/",
     src: "https://i.postimg.cc/0N824bVb/Roman-Numeral-Converter.png",
   },
+  {
+    id: 13,
+    projectTitle: "Two and Five Inventory Manager",
+    href: "https://two-and-five-inventory-manager.onrender.com/",
+    src: "https://i.postimg.cc/mD0ZK0Dt/Two-and-Five-Inventory-Manager.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
