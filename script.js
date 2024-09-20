@@ -94,6 +94,12 @@ const allProjects = [
     href: "https://two-and-five-inventory-manager.onrender.com/",
     src: "https://i.postimg.cc/mD0ZK0Dt/Two-and-Five-Inventory-Manager.png",
   },
+  {
+    id: 14,
+    projectTitle: "Phone Number Validator",
+    href: "https://raphaelisaiah.github.io/Phone-Number-Validator/",
+    src: "https://i.postimg.cc/Kzrk2jGx/Phone-Number-Validator.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
