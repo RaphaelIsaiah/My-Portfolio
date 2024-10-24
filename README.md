@@ -2,4 +2,4 @@
 
 # To Dos
 
-- Make recent projects appear first.
+- Add new projects
