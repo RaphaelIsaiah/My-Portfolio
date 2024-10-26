@@ -100,12 +100,6 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Phone-Number-Validator/",
     src: "https://i.postimg.cc/Kzrk2jGx/Phone-Number-Validator.png",
   },
-  {
-    id: 15,
-    projectTitle: "Platform Game",
-    href: "https://raphaelisaiah.github.io/Platform-Game/",
-    src: "https://i.postimg.cc/L5YCYk7z/Platform-Game.png",
-  },
 ];
 
 // ------ Functionality to display the different projects -------
