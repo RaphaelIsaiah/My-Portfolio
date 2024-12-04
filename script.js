@@ -106,6 +106,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Advanced-Dice-Game/",
     src: "https://i.postimg.cc/C15yKmyn/Advanced-Dice-Game.png",
   },
+  {
+    id: 16,
+    projectTitle: "Cash Register App",
+    href: "https://raphaelisaiah.github.io/Cash-Register-App/",
+    src: "https://i.postimg.cc/KYFMLNnk/Cash-Register-App.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
