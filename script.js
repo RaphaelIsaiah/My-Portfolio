@@ -28,18 +28,18 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Product-Landing-Page/",
     src: "https://i.postimg.cc/rF7WfYzd/Product-Landing-Page.png",
   },
-  {
-    id: 3,
-    projectTitle: "City Skyline",
-    href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-variables-by-building-a-city-skyline/step-118",
-    src: "https://i.postimg.cc/VLvbfCv8/City-Skyline.png",
-  },
-  {
-    id: 4,
-    projectTitle: "FCC Magazine",
-    href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-grid-by-building-a-magazine/step-80",
-    src: "https://i.postimg.cc/x1bJHVLp/FCC-Magazine.png",
-  },
+  // {
+  //   id: 3,
+  //   projectTitle: "City Skyline",
+  //   href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-variables-by-building-a-city-skyline/step-118",
+  //   src: "https://i.postimg.cc/VLvbfCv8/City-Skyline.png",
+  // },
+  // {
+  //   id: 4,
+  //   projectTitle: "FCC Magazine",
+  //   href: "https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-grid-by-building-a-magazine/step-80",
+  //   src: "https://i.postimg.cc/x1bJHVLp/FCC-Magazine.png",
+  // },
   {
     id: 5,
     projectTitle: "Role Playing Game",
@@ -49,7 +49,7 @@ const allProjects = [
   {
     id: 6,
     projectTitle: "Calorie Counter",
-    href: "https://raphaelisaiah.github.io/Role-Playing-Game/",
+    href: "https://raphaelisaiah.github.io/Calorie-Counter/",
     src: "https://i.postimg.cc/g2BWgsNq/image.png",
   },
   {
