@@ -112,6 +112,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Cash-Register-App/",
     src: "https://i.postimg.cc/KYFMLNnk/Cash-Register-App.png",
   },
+  {
+    id: 17,
+    projectTitle: "FCC News Author Page",
+    href: "https://raphaelisaiah.github.io/FCC-Authors-Page/",
+    src: "https://i.postimg.cc/0Q5FH8PJ/FCC-News-Author-Page.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
