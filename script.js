@@ -118,6 +118,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/FCC-Authors-Page/",
     src: "https://i.postimg.cc/0Q5FH8PJ/FCC-News-Author-Page.png",
   },
+  {
+    id: 18,
+    projectTitle: "FCC Forum Leaderboard",
+    href: "https://raphaelisaiah.github.io/FCC-Forum-Leaderboard/",
+    src: "https://i.postimg.cc/brrY8nX0/FCC-Forum-Leaderboard.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
