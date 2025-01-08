@@ -124,6 +124,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/FCC-Forum-Leaderboard/",
     src: "https://i.postimg.cc/brrY8nX0/FCC-Forum-Leaderboard.png",
   },
+  {
+    id: 19,
+    projectTitle: "Pokémon Search App",
+    href: "https://raphaelisaiah.github.io/Pokemon-Search-App/",
+    src: "https://i.postimg.cc/d31svkD7/Pok-mon-Search-App.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
