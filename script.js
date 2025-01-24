@@ -130,6 +130,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Pokemon-Search-App/",
     src: "https://i.postimg.cc/d31svkD7/Pok-mon-Search-App.png",
   },
+  {
+    id: 20,
+    projectTitle: "Random Quote Machine",
+    href: "https://random-quote-machine-nu-two.vercel.app/",
+    src: "https://i.postimg.cc/7PRW4C66/Random-Quote-Machine.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
