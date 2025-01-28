@@ -136,6 +136,12 @@ const allProjects = [
     href: "https://random-quote-machine-nu-two.vercel.app/",
     src: "https://i.postimg.cc/7PRW4C66/Random-Quote-Machine.png",
   },
+  {
+    id: 21,
+    projectTitle: "Markdown Previewer",
+    href: "https://markdown-previewer-seven-chi.vercel.app/",
+    src: "https://i.postimg.cc/d3pcjjmN/Markdown-Previewer.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
