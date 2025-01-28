@@ -140,7 +140,7 @@ const allProjects = [
     id: 21,
     projectTitle: "Markdown Previewer",
     href: "https://markdown-previewer-seven-chi.vercel.app/",
-    src: "https://i.postimg.cc/d3pcjjmN/Markdown-Previewer.png",
+    src: "https://i.postimg.cc/gcZx1S10/Markdown-Previewer.png",
   },
 ];
 
