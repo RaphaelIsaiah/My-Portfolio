@@ -142,6 +142,12 @@ const allProjects = [
     href: "https://markdown-previewer-seven-chi.vercel.app/",
     src: "https://i.postimg.cc/gcZx1S10/Markdown-Previewer.png",
   },
+  {
+    id: 22,
+    projectTitle: "Drum Machine",
+    href: "https://drum-machine-one-chi.vercel.app/",
+    src: "https://i.postimg.cc/WzY1tT4K/Drum-Machine.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
