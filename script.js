@@ -148,6 +148,12 @@ const allProjects = [
     href: "https://drum-machine-one-chi.vercel.app/",
     src: "https://i.postimg.cc/WzY1tT4K/Drum-Machine.png",
   },
+  {
+    id: 23,
+    projectTitle: "JavaScript Calculator",
+    href: "https://java-script-calculator-theta.vercel.app/",
+    src: "https://i.postimg.cc/T2DFhkj9/Java-Script-Calculator.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
