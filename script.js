@@ -154,6 +154,12 @@ const allProjects = [
     href: "https://java-script-calculator-theta.vercel.app/",
     src: "https://i.postimg.cc/T2DFhkj9/Java-Script-Calculator.png",
   },
+  {
+    id: 24,
+    projectTitle: "Pomodoro Clock",
+    href: "https://pomodoro-clock-neon.vercel.app/",
+    src: "https://i.postimg.cc/T3FK0yZL/Pomodoro-Clock.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
