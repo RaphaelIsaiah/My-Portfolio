@@ -160,6 +160,12 @@ const allProjects = [
     href: "https://pomodoro-clock-neon.vercel.app/",
     src: "https://i.postimg.cc/T3FK0yZL/Pomodoro-Clock.png",
   },
+  {
+    id: 25,
+    projectTitle: "Bar Chart Visualization",
+    href: "https://raphaelisaiah.github.io/Bar-Chart-Visualization/",
+    src: "https://i.postimg.cc/j2VmjPtF/Bar-Chart-Visualization.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
