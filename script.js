@@ -166,6 +166,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Bar-Chart-Visualization/",
     src: "https://i.postimg.cc/j2VmjPtF/Bar-Chart-Visualization.png",
   },
+  {
+    id: 26,
+    projectTitle: "Scatter Plot Visualization",
+    href: "https://raphaelisaiah.github.io/Scatter-Plot-Visualization/",
+    src: "https://i.postimg.cc/X70nz16z/Scatter-Plot-Visualization.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
