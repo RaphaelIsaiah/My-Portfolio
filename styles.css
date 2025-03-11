@@ -258,13 +258,24 @@ img {
   padding: 2rem 0.5rem;
 }
 
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.btn-show-less {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 3px;
 }
 
-.btn-show-all {
+.project-btns {
   font-size: 2rem;
   background-color: var(--main-highlight);
   transition: background-color 0.3s ease-out;
@@ -273,21 +284,31 @@ img {
   color: var(--main-text);
   border: none;
   font-family: "Lato", sans-serif;
+  cursor: pointer;
+  outline: none;
 }
 
-.btn-show-all:hover {
+.project-btns:hover {
   background-color: var(--main-card);
   color: var(--main-highlight);
 }
 
-.btn-show-all > i {
+.project-btns > i {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
 
-.btn-show-all:hover > i {
+.project-btns:hover > i {
   transform: translateX(3px);
+}
+
+/* 430px / 16px = 26.875em  */
+@media (max-width: 26.875em) {
+  .button-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /* Contacts section */
