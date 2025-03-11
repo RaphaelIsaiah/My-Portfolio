@@ -172,6 +172,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Scatter-Plot-Visualization/",
     src: "https://i.postimg.cc/X70nz16z/Scatter-Plot-Visualization.png",
   },
+  {
+    id: 27,
+    projectTitle: "Heat Map Visualization",
+    href: "https://raphaelisaiah.github.io/Heat-Map-Visualization/",
+    src: "https://i.postimg.cc/c4TcCY5T/Heat-Map-Visualization.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
