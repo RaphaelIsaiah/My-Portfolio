@@ -174,7 +174,7 @@ const generateProjectMarkup = (currentProject) => `
 `;
 
 // Function to display only six of the projects
-const renderSixProjects = (projectsArray) => {
+const renderProjects = (projectsArray) => {
   const projectMarkup = projectsArray
     .slice(startingIndex, endingIndex) // Renders the first 6 projects.
     .map(generateProjectMarkup)
@@ -211,32 +211,46 @@ const sortProjects = (projectsArray) => {
 
 // Function to fetch the next six projects
 const fetchNextProjects = (projectsArray) => {
-  startingIndex += 6;
-  endingIndex += 6;
-  renderSixProjects(projectsArray);
+  startingIndex = endingIndex; // Move the starting index to the current ending index
+  endingIndex += 6; // Increase the ending index by 6
 
-  // updates the visibility of the buttons
+  renderProjects(projectsArray); // Render the next 6 projects
+
+  // Show the "Less" button if more projects are displayed
+  if (endingIndex > 6) {
+    projectLess.style.display = "inline-block";
+  }
+
+  // Hide the "More" button if there are no more projects to display
   if (endingIndex >= projectsArray.length) {
     projectMore.style.display = "none";
   }
-  projectLess.style.display = "inline-block";
 };
 
 // Function to fetch the previous six projects
 const fetchPreviousProjects = (projectsArray) => {
-  startingIndex -= 6;
-  endingIndex -= 6;
-  renderSixProjects(projectsArray);
+  endingIndex = startingIndex; // Move the ending index to the current starting index
+  startingIndex -= 6; // Decrease the starting index by 6
 
-  // updates the visibility of the buttons
+  // Remove the last 6 projects from the DOM
+  const projects = projectGrid.querySelectorAll(".project");
+  for (let i = 0; i < 6; i++) {
+    if (projects[projects.length - 1]) {
+      projectGrid.removeChild(projects[projects.length - 1]);
+    }
+  }
+
+  // Show the "More" button if we are not at the beginning
   if (startingIndex <= 0) {
+    startingIndex = 0;
+    endingIndex = 6;
     projectLess.style.display = "none";
   }
   projectMore.style.display = "inline-block";
 };
 
 // This calls the function to display when the page loads.
-renderSixProjects(sortProjects(allProjects));
+renderProjects(sortProjects(allProjects));
 
 // Initially hide the "Less" button
 projectLess.style.display = "none";
