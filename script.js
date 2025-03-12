@@ -158,7 +158,7 @@ const allProjects = [
     id: 25,
     projectTitle: "Choropleth Map Visualization",
     href: "https://raphaelisaiah.github.io/Chloropeth-Map-Visualization/",
-    src: "https://i.postimg.cc/k5PxDKRp/image.png",
+    src: "https://i.postimg.cc/k5PxDKRp/Choropleth-Map-Visualization.png",
   },
 ];
 
