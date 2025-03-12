@@ -154,6 +154,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Heat-Map-Visualization/",
     src: "https://i.postimg.cc/c4TcCY5T/Heat-Map-Visualization.png",
   },
+  {
+    id: 25,
+    projectTitle: "Choropleth Map Visualization",
+    href: "https://raphaelisaiah.github.io/Chloropeth-Map-Visualization/",
+    src: "https://i.postimg.cc/k5PxDKRp/image.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
