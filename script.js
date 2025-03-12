@@ -1,11 +1,6 @@
 // HTML DOM Element selection
 const projectGrid = document.getElementById("projects-grid");
-const projectMore = document.getElementById("project_more");
-const projectLess = document.getElementById("project_less");
-
-// Control index variables
-let startingIndex = 0;
-let endingIndex = 6;
+const projectToggle = document.getElementById("project_toggle");
 
 // Array to store projects list.
 const allProjects = [
@@ -174,9 +169,9 @@ const generateProjectMarkup = (currentProject) => `
 `;
 
 // Function to display only six of the projects
-const renderProjects = (projectsArray) => {
+const renderSixProjects = (projectsArray) => {
   const projectMarkup = projectsArray
-    .slice(startingIndex, endingIndex) // Renders the first 6 projects.
+    .slice(0, 6) // Renders the first 6 projects.
     .map(generateProjectMarkup)
     .join("");
 
@@ -194,71 +189,27 @@ const sortProjects = (projectsArray) => {
 };
 
 // Function to render all projects
-// const renderAllProjects = (projectsArray) => {
-//   const isLess = projectToggle.innerText.includes("Less");
-//   if (!isLess) {
-//     const projectMarkup = projectsArray.map(generateProjectMarkup).join("");
-//     projectGrid.innerHTML = projectMarkup;
-//   } else {
-//     renderSixProjects(sortProjects(allProjects));
-//   }
-
-//   // updates the innerHTML of the project toggle button
-//   projectToggle.innerHTML = isLess
-//     ? `More <i class="fa-solid fa-angles-right"></i>`
-//     : `Less <i class="fa-solid fa-angles-right"></i>`;
-// };
-
-// Function to fetch the next six projects
-const fetchNextProjects = (projectsArray) => {
-  startingIndex = endingIndex; // Move the starting index to the current ending index
-  endingIndex += 6; // Increase the ending index by 6
-
-  renderProjects(projectsArray); // Render the next 6 projects
-
-  // Show the "Less" button if more projects are displayed
-  if (endingIndex > 6) {
-    projectLess.style.display = "inline-block";
+const renderAllProjects = (projectsArray) => {
+  const isLess = projectToggle.innerText.includes("Less");
+  if (!isLess) {
+    const projectMarkup = projectsArray.map(generateProjectMarkup).join("");
+    projectGrid.innerHTML = projectMarkup;
+  } else {
+    renderSixProjects(sortProjects(allProjects));
   }
 
-  // Hide the "More" button if there are no more projects to display
-  if (endingIndex >= projectsArray.length) {
-    projectMore.style.display = "none";
-  }
-};
-
-// Function to fetch the previous six projects
-const fetchPreviousProjects = (projectsArray) => {
-  endingIndex = startingIndex; // Move the ending index to the current starting index
-  startingIndex -= 6; // Decrease the starting index by 6
-
-  // Remove the last 6 projects from the DOM
-  const projects = projectGrid.querySelectorAll(".project");
-  for (let i = 0; i < 6; i++) {
-    if (projects[projects.length - 1]) {
-      projectGrid.removeChild(projects[projects.length - 1]);
-    }
-  }
-
-  // Show the "More" button if we are not at the beginning
-  if (startingIndex <= 0) {
-    startingIndex = 0;
-    endingIndex = 6;
-    projectLess.style.display = "none";
-  }
-  projectMore.style.display = "inline-block";
+  // updates the innerHTML of the project toggle button
+  projectToggle.innerHTML = isLess
+    ? `More <i class="fa-solid fa-angles-right"></i>`
+    : `Less <i class="fa-solid fa-angles-right"></i>`;
 };
 
 // This calls the function to display when the page loads.
-renderProjects(sortProjects(allProjects));
+renderSixProjects(sortProjects(allProjects));
 
-// Initially hide the "Less" button
-projectLess.style.display = "none";
-
-projectMore.addEventListener("click", () => {
-  fetchNextProjects(sortProjects(allProjects));
+projectToggle.addEventListener("click", () => {
+  renderAllProjects(sortProjects(allProjects));
 });
 
-projectLess.addEventListener("click", () => {
-  fetchPreviousProjects(sortProjects(allProjects));
-});
+// Add footer dynamic copyright year
+document.querySelector(".copy").innerText = new Date().getFullYear();

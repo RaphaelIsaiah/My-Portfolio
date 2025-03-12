@@ -76,7 +76,6 @@
 
     <section id="welcome-section" class="welcome-section">
       <h1>Hi! I am Raphael</h1>
-      <!-- <p>currently learning full-stack development</p> -->
       <p>learning full-stack development</p>
     </section>
 
@@ -88,14 +87,9 @@
 
       <div id="projects-grid" class="projects-grid"></div>
 
-      <div class="button-container">
-        <button id="project_less" class="btn project-btns btn-show-less">
-          Less <i class="fa-solid fa-angles-left"></i>
-        </button>
-        <button id="project_more" class="btn project-btns btn-show-more">
-          More <i class="fa-solid fa-angles-right"></i>
-        </button>
-      </div>
+      <button id="project_toggle" class="btn btn-show-all">
+        More <i class="fa-solid fa-angles-right"></i>
+      </button>
     </section>
 
     <!-- END PROJECTS SECTION -->
@@ -157,7 +151,7 @@
     <!-- START FOOTER SECTION -->
 
     <footer>
-      <p>&copy; Raphael Isaiah 2024</p>
+      <p>&copy; Raphael Isaiah <span class="copy"></span></p>
     </footer>
   </body>
   <script src="./script.js"></script>
