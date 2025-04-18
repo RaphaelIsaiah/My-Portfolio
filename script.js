@@ -166,6 +166,12 @@ const allProjects = [
     href: "https://raphaelisaiah.github.io/Treemap-Diagram-Visualization/",
     src: "https://i.postimg.cc/Cx24LrkH/Treemap-Diagram-Visualization.png",
   },
+  {
+    id: 27,
+    projectTitle: "Timestamp Microservice",
+    href: "https://boilerplate-project-timestamp-one-teal.vercel.app/",
+    src: "https://i.postimg.cc/FFx63ch4/Timestamp-Microservice.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
