@@ -172,6 +172,12 @@ const allProjects = [
     href: "https://boilerplate-project-timestamp-one-teal.vercel.app/",
     src: "https://i.postimg.cc/FFx63ch4/Timestamp-Microservice.png",
   },
+  {
+    id: 28,
+    projectTitle: "Request Header Parser Microservice",
+    href: "https://boilerplate-project-headerparser-six.vercel.app/",
+    src: "https://i.postimg.cc/hjdS1cNX/Request-Header-Parser.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
