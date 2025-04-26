@@ -178,6 +178,12 @@ const allProjects = [
     href: "https://boilerplate-project-headerparser-six.vercel.app/",
     src: "https://i.postimg.cc/hjdS1cNX/Request-Header-Parser.png",
   },
+  {
+    id: 29,
+    projectTitle: "URL Shortener Microservice",
+    href: "https://boilerplate-project-urlshortener-omega.vercel.app/",
+    src: "https://i.postimg.cc/pLwm91Rt/URL-Shortener-Microservice.png",
+  },
 ];
 
 // ------ Functionality to display the different projects -------
